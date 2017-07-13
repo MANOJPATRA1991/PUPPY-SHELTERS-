@@ -15,7 +15,7 @@ Base = declarative_base()
 
 
 class Shelter(Base):
-    # create a table named Restaurant
+    # create a table named shelter
     __tablename__ = 'shelter'
     name = Column(String(80), nullable=False)
     address = Column(String(250))
@@ -27,7 +27,7 @@ class Shelter(Base):
 
 
 class Puppy(Base):
-    # create a table named menu_item
+    # create a table named puppy
     __tablename__ = 'puppy'
     name = Column(String(250), nullable=False)
     id = Column(Integer, primary_key=True)
@@ -40,7 +40,7 @@ class Puppy(Base):
 
 
 # INSERT AT END OF FILE
-# creates an engine which provides connectivity to the database server
+# creates an engine which provides connectivity to the puppyshelter database server
 engine = create_engine('sqlite:///puppyshelter.db')
 
 # goes into the database and adds the classes that we defined
