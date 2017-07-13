@@ -1,5 +1,3 @@
-import sys
-
 from sqlalchemy import Column, ForeignKey, Integer, String, Date, Numeric
 
 from sqlalchemy.ext.declarative import declarative_base
